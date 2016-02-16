@@ -19,6 +19,7 @@ describe UserMailer, type: :mailer do
 
     it 'assigns @name' do
       expect(mail.body.encoded).to match(user.name)
+      puts mail.body.encoded
     end
   end
 end
